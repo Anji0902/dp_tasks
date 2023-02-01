@@ -17,7 +17,7 @@ $title = "PHP is interesting";
 echo "<h1>" . $title . "</h1>"; 
 ?>
 
-<h3>3.5 Table and variation </h3>
+<h3>3.5 Table and variation. </h3>
 <?php
 $g1 = 5;
 $g2 = 4; 
@@ -39,6 +39,7 @@ echo "
 </table>
 ";
 ?>
+
 
 <h3>3.6 Screenshot of the development environment  </h3>
 <img src="DockerSSWeb1.png" alt="">

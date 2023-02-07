@@ -5,7 +5,7 @@
 
   <!-- Copyright -->
   <div class="footer-copyright text-center py-3">© 2020 footer-copyright <br>
-  <?php echo basename($_SERVER['SCRIPT_FILENAME']) . " Last modified date : " . date(" d M Y H : i");  ?>
+  <?php echo basename($_SERVER['SCRIPT_FILENAME']) . " Last modified on " . date("l, d M Y H : i");  ?>
   </div>
   <!-- Copyright -->
 

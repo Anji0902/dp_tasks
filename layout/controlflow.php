@@ -71,9 +71,26 @@ check_vote();
     5. In task 5, you used $_SERVER['HTTP_USER_AGENT']; to get the browser name. Use Switch statement with strops function to print the name of the browser as below: If someone is using Chrome it should print, you are using Goolge Chrome…. 
 </h4> 
 <?php
-if (strpos($_SERVER['HTTP_USER_AGENT'], 'Chrome') !== false
-|| strpos($_SERVER['HTTP_USER_AGENT'], 'CriOS') !== false) {
-}
+ function getBrowser(){
+   $user_agent = $_SERVER['HTTP_USER_AGENT'];
+   $browser = "N/A";
+   $browsers = [
+     '/msie/i' => 'Internet explorer',
+     '/firefox/i' => 'Firefox',
+     '/safari/i' => 'Safari',
+     '/chrome/i' => 'Chrome',
+     '/edge/i' => 'Edge',
+     '/opera/i' => 'Opera',
+     '/mobile/i' => 'Mobile browser',
+   ];
+   foreach ($browsers as $regex => $value){
+     if (preg_match($regex, $user_agent)){
+       $browser = $value;
+     }
+   }
+   return $browser;
+ }
+ echo "You are using: " . getBrowser();
 ?>
 
 <?php include "footer.php" ?> 

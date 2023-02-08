@@ -53,7 +53,17 @@ elseif ($score < 50){
 <h4>
     4. Write a program to get inputs (age and name) from the user and based on their age, decide if he/she is eligible for voting  
 </h4> 
-<?php
+<?php 
+function check_vote() {
+    $name = "Dhanushke";
+    $age = 36;
+    if ($age >= 18) {
+        echo $name . ", You Are Eligible For Vote";
+    } else {
+        echo $name . ", You are not eligible for vote. ";
+    }
+}
+check_vote(); 
 
 ?>
 
@@ -61,7 +71,9 @@ elseif ($score < 50){
     5. In task 5, you used $_SERVER['HTTP_USER_AGENT']; to get the browser name. Use Switch statement with strops function to print the name of the browser as below: If someone is using Chrome it should print, you are using Goolge Chrome…. 
 </h4> 
 <?php
-
+if (strpos($_SERVER['HTTP_USER_AGENT'], 'Chrome') !== false
+|| strpos($_SERVER['HTTP_USER_AGENT'], 'CriOS') !== false) {
+}
 ?>
 
 <?php include "footer.php" ?> 

@@ -58,9 +58,9 @@ function check_vote() {
     $name = "Dhanushke";
     $age = 36;
     if ($age >= 18) {
-        echo $name . ", You Are Eligible For Vote";
+        echo $name . ", You Are Eligible For Voting";
     } else {
-        echo $name . ", You are not eligible for vote. ";
+        echo $name . ", You are not eligible for voting. ";
     }
 }
 check_vote(); 

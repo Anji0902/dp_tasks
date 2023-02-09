@@ -106,9 +106,16 @@ print_r( array_change_key_case($courses,CASE_UPPER));
 <h4>
 5. List all your favorite colors and their hexadecimal equivalents. (associative arrays)
 </h4> 
-<?php
-
-?>
+<?php 
+    $color['#8B0000'] = "DarkRed";
+    $color['#696969'] = "DimGray";
+    $color['#00FFFF'] = "Aqua";
+    $color['#F5F5DC'] = "Beige";
+    $color['#A52A2A'] = "Brown";
+    foreach ($color as $x=>$x_values){
+        echo $x . " => ".$x_values."<br>";
+    }
+?> <br> 
 
 <h4>
 6. PHP script to calculate and display average temperature, five lowest and highest temperatures.

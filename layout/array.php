@@ -121,9 +121,21 @@ print_r( array_change_key_case($courses,CASE_UPPER));
 6. PHP script to calculate and display average temperature, five lowest and highest temperatures.
 </h4> 
 <?php
-
+    $a=array(78, 60, 62, 68, 71, 68, 73,
+    85, 66, 64, 76, 63, 75, 76, 73, 68, 62, 73, 72, 65, 
+    74, 62, 62, 65, 64, 68, 73, 75, 79, 73);
+    $sum=array_sum($a);
+    $count=count($a);
+    echo "Average temperature : ".$sum/$count;
+    sort($a);
+    for ($i=0; $i < 5; $i++) {
+        echo $a[$i] . "<br>";
+    }
+    rsort($a);
+    for ($i=0; $i < 5; $i++) {
+        echo $a[$i]."<br>";
+    }
 ?>
-
 
 
 <?php include "footer.php" ?> 

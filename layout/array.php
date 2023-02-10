@@ -56,13 +56,26 @@ echo "<li>".$value . "</li>";
 <h4>
 2. The unset() function is used to remove element from the array.
 </h4> 
-<?php
-$courses1=array("PHP", "HTML", "JavaScript", "CMS", "Project");
-unset($courses1["2"]);
-var_dump($courses1);
-print_r(array_values($courses1));
-?> 
+<h4>2. dump action
+    <?php
+    $courses1=array("PHP","HTML","JavaScript","CMS","Project");
+    unset($courses1["20"]);
+    echo "<h6> use unset function to remove the third element of the array </h6>";
+    foreach ($courses1 as $value) {
+        echo $value."<br>"; 
+    } 
+    echo "Dumb information about element of the array";
+        var_dump($courses1);
+    ?>
+    <br><br>
+    <?PHP
+    echo"Print only the values of the array elements";
+        $values=array_values($courses1);
+        foreach ($values as $value) {
+            echo $value . "<br>";}
+?>
 <br>
+
 <h4>
 3. Delete an element from the array below:
 </h4> 

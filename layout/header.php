@@ -12,6 +12,8 @@
     color: white;
 }
     </style>
+    <!-- Calling the Java script-->
+    <script src="../layout/js/site.js"> </script>
 </head>
 <body>
   <div class="container" >
